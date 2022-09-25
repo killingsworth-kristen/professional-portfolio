@@ -1,0 +1,158 @@
+:root {
+    --primary: #14B9B9;
+    --accent: #5B5B5B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Nav bar and header */
+
+header {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   background-color: var(--accent);
+}
+
+h1 {
+    background-color: var(--primary);
+    color: var(--accent);
+}
+
+/* fixes list elements all being on the same row inline */
+nav {
+    width: 700px;
+}
+
+nav li{
+    font-size: 150%;
+    text-decoration: none;
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 2%;
+    color: var(--primary);
+}
+
+nav a:hover {
+    background: var(--primary);
+    color: var(--accent);
+}
+/* background image in header */
+/* .profile-pic {
+    background: var(--primary);
+}
+
+.profile-pic h2 {
+    position: absolute;
+    left: 70vw;
+    top: 35vh;
+}
+
+.profile-pic img {
+    width: 250px;
+    border-radius: 150px;
+} */
+
+/* About section */
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+.about h2 {
+    width: 40%;
+    text-align: center;
+    padding: 5%;
+    margin: 2%;
+    border-right: solid var(--accent);
+}
+
+.about p {
+    width: 60%;
+    padding: 3%;
+}
+
+
+/* Work Section */
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work h2 {
+    width: 40%;
+    text-align: center;
+    padding: 3%;
+    margin: 2%;
+    border-right: solid var(--accent);
+}
+
+.work ul {
+    justify-content: space-between;
+    list-style: none;
+}
+
+.work div {
+    width: auto;
+    
+}
+
+
+/* Footer/contact sections */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+}
+
+footer h2 {
+    text-align: center;
+    border-bottom: solid var(--accent);
+    margin: 5%;
+}
+
+footer ul {
+    list-style: none;
+    justify-content: center;
+}
+
+footer li {
+    flex: 1 1 200px;
+    display: inline;
+    padding: 1% 5%;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+footer a:hover {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+.contact {
+    width: 100%;
+    text-align: center;
+    margin: 5%;
+}
+
+/* makes header fill total screen width on smaller view */
+@media screen and (max-width: 962px) {
+    h1 {
+        width: 100%;
+    }
+}
