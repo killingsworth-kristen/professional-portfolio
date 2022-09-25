@@ -1,6 +1,8 @@
+/* universal tags */
 :root {
     --primary: #14B9B9;
     --accent: #5B5B5B;
+    --main: #D8D8D8;
 }
 
 * {
@@ -10,7 +12,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Nav bar and header */
+main {
+    background: var(--main);
+}
+
+/* header section */
 
 header {
    display: flex;
@@ -24,7 +30,7 @@ h1 {
     color: var(--accent);
 }
 
-/* fixes list elements all being on the same row inline */
+/* Nav bar subsection of header */
 nav {
     width: 700px;
 }
@@ -45,21 +51,24 @@ nav a:hover {
     background: var(--primary);
     color: var(--accent);
 }
-/* background image in header */
-/* .profile-pic {
-    background: var(--primary);
+
+/* background image in sub-header */
+.profile-pic {
+    display: flex;
+    background: var(--main);
+    justify-content: space-around;
 }
 
 .profile-pic h2 {
-    position: absolute;
-    left: 70vw;
-    top: 35vh;
+    padding: 10%;
 }
 
 .profile-pic img {
-    width: 250px;
-    border-radius: 150px;
-} */
+    width: 30%;
+    height: auto;
+    border-radius: 100px;
+    margin: 2%;
+}
 
 /* About section */
 .about {
@@ -78,6 +87,7 @@ nav a:hover {
 .about p {
     width: 60%;
     padding: 3%;
+    flex-direction: column;
 }
 
 
@@ -90,7 +100,7 @@ nav a:hover {
 }
 
 .work h2 {
-    width: 40%;
+    width: 39%;
     text-align: center;
     padding: 3%;
     margin: 2%;
@@ -98,15 +108,76 @@ nav a:hover {
 }
 
 .work ul {
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 0;
 }
 
-.work div {
-    width: auto;
-    
+.work li:hover {
+    border: solid var(--primary);
+    box-shadow: 0px 0px 10px var(--primary);
 }
 
+.work a {
+    text-decoration: none;
+    color: var(--accent);
+}
+
+/* picture formatting/linking */
+.showcase {
+    border: solid var(--accent);
+    background-image: url(./images/spring-sorrel.jpeg);
+    background-size: 480px 640px;
+    width: 480px;
+    height: 640px;
+    margin: 2%;
+}
+
+.showcase h3 {
+    background-color: var(--primary);
+    padding: 5px;
+}
+
+.secondary-project {
+    border: solid var(--accent);
+    margin: 2%;
+}
+
+.secondary-project h3 {
+    background-color: var(--primary);
+    padding: 5px;
+}
+
+#project-2 {
+    background-image: url(./images/multnomah-falls-hat.jpeg);
+    background-size: 240px 320px;
+    width: 240px;
+    height: 320px;
+}
+
+#project-3 {
+    background-image: url(./images/Cactopus.jpg);
+    background-size: 240px 320px;
+    width: 240px;
+    height: 320px;
+}
+
+#project-4 {
+    background-image: url(./images/poison-apple.jpeg);
+    background-size: 240px 320px;
+    width: 240px;
+    height: 320px;
+}
+
+#project-5 {
+    background-image: url(./images/patriotic-wreath.jpeg);
+    background-size: 240px 320px;
+    width: 240px;
+    height: 320px;
+}
 
 /* Footer/contact sections */
 footer {
@@ -114,18 +185,23 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin: 0;
+    background: var(--main);
 }
 
 footer h2 {
     text-align: center;
     border-bottom: solid var(--accent);
-    margin: 5%;
+    padding: 1%;
+    text-decoration: underline var(--accent);
 }
 
 footer ul {
     list-style: none;
     justify-content: center;
+    padding: 1%;
+    background: var(--accent);
+    width: 100%;
+    margin: 0;
 }
 
 footer li {
@@ -136,23 +212,65 @@ footer li {
 
 footer a {
     text-decoration: none;
-    color: var(--accent);
+    color: var(--primary);
 }
 
 footer a:hover {
-    background: var(--accent);
-    color: var(--primary);
+    background: var(--primary);
+    color: var(--accent);
 }
 
 .contact {
     width: 100%;
     text-align: center;
-    margin: 5%;
+    margin: 1% 5%;
 }
 
-/* makes header fill total screen width on smaller view */
+/* adjustments for smaller screens*/
 @media screen and (max-width: 962px) {
     h1 {
         width: 100%;
+    }
+
+    .profile-pic h2{
+        flex-direction: column;
+    }
+    
+    .about {
+        flex-direction: column;
+    }
+
+    .about h2 {
+        background: var(--accent);
+        color: var(--primary);
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .about p {
+        width: 100%;
+        text-align: justify;
+        margin: 0 auto;
+    }
+
+    .work {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .work h2 {
+        background: var(--accent);
+        color: var(--primary);
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .work ul {
+        width: 100%;
+    }
+
+    .showcase {
+        width: 240px;
+        height: 320px;
     }
 }
