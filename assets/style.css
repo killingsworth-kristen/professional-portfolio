@@ -129,10 +129,10 @@ nav a:hover {
 /* picture formatting/linking */
 .showcase {
     border: solid var(--accent);
-    background-image: url(./images/spring-sorrel.jpeg);
-    background-size: 480px 640px;
-    width: 480px;
-    height: 640px;
+    background-image: url(./images/test-task.PNG);
+    background-size: 669px 409px;
+    width: 669px;
+    height: 409px;
     margin: 2%;
 }
 
@@ -152,28 +152,28 @@ nav a:hover {
 }
 
 #project-2 {
-    background-image: url(./images/multnomah-falls-hat.jpeg);
+    background-image: url(https://placehold.jp/240x320.png);
     background-size: 240px 320px;
     width: 240px;
     height: 320px;
 }
 
 #project-3 {
-    background-image: url(./images/Cactopus.jpg);
+    background-image: url(https://placehold.jp/240x320.png);
     background-size: 240px 320px;
     width: 240px;
     height: 320px;
 }
 
 #project-4 {
-    background-image: url(./images/poison-apple.jpeg);
+    background-image: url(https://placehold.jp/240x320.png);
     background-size: 240px 320px;
     width: 240px;
     height: 320px;
 }
 
 #project-5 {
-    background-image: url(./images/patriotic-wreath.jpeg);
+    background-image: url(https://placehold.jp/240x320.png);
     background-size: 240px 320px;
     width: 240px;
     height: 320px;
