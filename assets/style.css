@@ -1,8 +1,8 @@
 /* universal tags */
 :root {
-    --primary: #14B9B9;
-    --accent: #5B5B5B;
-    --main: #D8D8D8;
+    --navy: #0a192f;
+    --green: #64ffda;
+    --slate: #8892b0;
 }
 
 * {
@@ -10,267 +10,35 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--navy);
+    color: var(--slate);
 }
 
-main {
-    background: var(--main);
+button {
+    border: none
 }
 
-/* header section */
-
-header {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   background-color: var(--accent);
+.nav {
+    margin: 1% 1% 0 0;
+    border-bottom: 1px solid black;
 }
 
-h1 {
-    background-color: var(--primary);
-    color: var(--accent);
-}
-
-/* Nav bar subsection of header */
-nav {
-    width: 700px;
-}
-
-nav li{
-    font-size: 150%;
+.nav-link {
+    color: var(--slate);
     text-decoration: none;
-    display: inline;
 }
 
-nav a {
-    text-decoration: none;
-    margin: 2%;
-    color: var(--primary);
+.nav-link:hover {
+    color: aquamarine;
 }
 
-nav a:hover {
-    background: var(--primary);
-    color: var(--accent);
+#resume-btn {
+    border: 2px solid var(--green);
+    border-radius: 15px;
+    color: var(--green);
 }
 
-/* background image in sub-header */
-.profile-pic {
-    display: flex;
-    background: var(--main);
-    justify-content: space-around;
+#resume-btn:hover {
+    background-color:  #233554;
 }
 
-.profile-pic h2 {
-    padding: 10%;
-}
-
-.profile-pic img {
-    width: 30%;
-    height: auto;
-    border-radius: 100px;
-    margin: 2%;
-}
-
-/* About section */
-.about {
-  display: flex;
-  flex-direction: row;
-}
-
-.about h2 {
-    width: 40%;
-    text-align: center;
-    padding: 5%;
-    margin: 2%;
-    border-right: solid var(--accent);
-}
-
-.about p {
-    width: 60%;
-    padding: 3%;
-    flex-direction: column;
-}
-
-
-/* Work Section */
-
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.work h2 {
-    width: 39%;
-    text-align: center;
-    padding: 3%;
-    margin: 2%;
-    border-right: solid var(--accent);
-}
-
-.work ul {
-    justify-content: space-around;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    width: 40%;
-    margin: 0;
-}
-
-.work li:hover {
-    border: solid var(--primary);
-    box-shadow: 0px 0px 10px var(--primary);
-}
-
-.work a {
-    text-decoration: none;
-    color: var(--accent);
-}
-
-/* picture formatting/linking */
-.showcase {
-    border: solid var(--accent);
-    background-image: url(./images/test-task.PNG);
-    background-size: 669px 409px;
-    width: 669px;
-    height: 409px;
-    margin: 2%;
-}
-
-.showcase h3 {
-    background-color: var(--primary);
-    padding: 5px;
-}
-
-.secondary-project {
-    border: solid var(--accent);
-    margin: 2%;
-}
-
-.secondary-project h3 {
-    background-color: var(--primary);
-    padding: 5px;
-}
-
-#project-2 {
-    background-image: url(https://placehold.jp/240x320.png);
-    background-size: 240px 320px;
-    width: 240px;
-    height: 320px;
-}
-
-#project-3 {
-    background-image: url(https://placehold.jp/240x320.png);
-    background-size: 240px 320px;
-    width: 240px;
-    height: 320px;
-}
-
-#project-4 {
-    background-image: url(https://placehold.jp/240x320.png);
-    background-size: 240px 320px;
-    width: 240px;
-    height: 320px;
-}
-
-#project-5 {
-    background-image: url(https://placehold.jp/240x320.png);
-    background-size: 240px 320px;
-    width: 240px;
-    height: 320px;
-}
-
-/* Footer/contact sections */
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    background: var(--main);
-}
-
-footer h2 {
-    text-align: center;
-    border-bottom: solid var(--accent);
-    padding: 1%;
-    text-decoration: underline var(--accent);
-}
-
-footer ul {
-    list-style: none;
-    justify-content: center;
-    padding: 1%;
-    background: var(--accent);
-    width: 100%;
-    margin: 0;
-}
-
-footer li {
-    flex: 1 1 200px;
-    display: inline;
-    padding: 1% 5%;
-}
-
-footer a {
-    text-decoration: none;
-    color: var(--primary);
-}
-
-footer a:hover {
-    background: var(--primary);
-    color: var(--accent);
-}
-
-.contact {
-    width: 100%;
-    text-align: center;
-    margin: 1% 5%;
-}
-
-/* adjustments for smaller screens*/
-@media screen and (max-width: 962px) {
-    h1 {
-        width: 100%;
-    }
-
-    .profile-pic h2{
-        flex-direction: column;
-    }
-    
-    .about {
-        flex-direction: column;
-    }
-
-    .about h2 {
-        background: var(--accent);
-        color: var(--primary);
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .about p {
-        width: 100%;
-        text-align: justify;
-        margin: 0 auto;
-    }
-
-    .work {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .work h2 {
-        background: var(--accent);
-        color: var(--primary);
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .work ul {
-        width: 100%;
-    }
-
-    .showcase {
-        width: 240px;
-        height: 320px;
-    }
-}
