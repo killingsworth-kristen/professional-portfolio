@@ -9,106 +9,125 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <nav>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link " href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-                <button>
-                    <a class="nav-link" id="resume-btn" href="./assets/KillingsworthResumeJan2023.pdf" target="_blank">Resume</a>
-                </button>
-            </li>
-        </ul>
-    </nav>
-    <section class="home row">
-      <div class="col-4" id="title-container">
-        <h1>Kristen Killingsworth</h1>
-        <p>Full-Stack Web Developer</p>
-      </div>
-      <img class="col" id="profile-pic" src="./assets/images/Profile Picture.JPG" alt="picture of kristen killingsworth" height="300" width="225"/>
-    </section>
-    <section class="about" id="about">
-      <div class="about-title">
-        <hr width="10%" style="margin-left:5%;">
-          <h3>About</h3>
-        <hr width="60%">
-      </div>
-      <div class="about-text">
-        <p class="row">Hello! My name is Kristen Killingsworth and I am a fledgling full stack web developer. My background and bachelor's degree is in Humanities specifically focused on the societal issues surrounding marginalized communities. My original intention was to enter the field of museology however due to the pandemic it was difficult to build the connections required of breaking into that field. I fell back on my previous work experience of working with children to become an RBT working with children diagnosed with Autism. In 2022, I decided that I wanted to make a career change and enrolled in a full stack coding bootcamp through the University of Washington.</p>
-        <p class="row">During my bootcamp, I learned many skills involved with full stack web development. During my course work for my bachelor's I participated in a  
-          <a href="https://cdm16786.contentdm.oclc.org/digital/collection/p16786coll12/search/searchterm/xxskillspire" target="_blank">research project</a> to document and archive materials from a local organization targeted for under served populations in our community. I was assigned to Skillspire which is an organization that focuses on helping women and people of color gain employment in the ever expanding tech industry. This was part of my inspiration for choosing to attend a bootcamp and I hope to apply my newly acquired skills and my life experiences to bring a unique and necessary perspective to any development team.</p>
-        <div class="about-tech-list row">
-          <p>Here are some of the technologies that I have experience with:</p>
-          <ul class="row">
-            <div class="col-md-auto">
-              <li>Node.js</li>
-              <li>React</li>
-              <li>Express.js</li>
-              <li>SQL</li>
-              <li>MongoDB</li>
-            </div>
-            <div class="col-md-auto">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Cloudinary</li>
-              <li>Google APIs</li>
-            </div>
-          </ul>
+  <nav>
+    <div class="navigation-tabs">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link " href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <button>
+            <a class="nav-link" id="resume-btn" href="./assets/KillingsworthResumeJan2023.pdf" target="_blank">Resume</a>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <!-- hamburger menu -->
+    <div class="hamburger-menu">
+      <button id="hamburgerMenuBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <img src="./assets/images/hamburger menu var(--green).png" alt="navigation menu" width="50">
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <button id="offcanvas-close-btn" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
         </div>
       </div>
-    </section>
-    <section class="projects" id="projects">
-      <div class="projects-title">
-        <hr width="10%" style="margin-left:5%;">
-          <h3>Projects</h3>
-        <hr width="60%">
-      </div>
-      <p>This is a test</p>
-    </section>
-    <section class="experience" id="experience">
-      <div class="experience-title">
-        <hr width="10%" style="margin-left:5%;">
-          <h3>Experience</h3>
-        <hr width="58%">
-      </div>
-      <p>This is a test</p>
-    </section>
-    <footer>
-        <ul>
-          <li>
-            <a href="https://github.com/killingsworth-kristen" target="_blank">
-              <img class="footer-img" src="./assets/images/github-mark-white.png" alt="github link"/>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/kristen-killingsworth/" target="_blank">
-              <img class="footer-img" src="./assets/images/In-White-128.png" alt="linkedIn link"/>
-            </a>
-          </li>
-          <li>
-            <a href="mailto: killingsworth_kristen@yahoo.com" target="_blank">
-              <img class="footer-img" src="./assets/images/email-128.png" alt="email link"/>
-            </a>
-          </li>
-          <li>
-            <a href="tel:3163504963" target="_blank">
-              <img class="footer-img" src="./assets/images/phone-icon-white-transparent.png" alt="phone link"/>
-            </a>
-          </li>
+  </nav>
+  <section class="home row">
+    <div class="col-4" id="title-container">
+      <h1>Kristen Killingsworth</h1>
+      <p>Full-Stack Web Developer</p>
+    </div>
+    <img class="col" id="profile-pic" src="./assets/images/Profile Picture.JPG" alt="picture of kristen killingsworth" height="300" width="225"/>
+  </section>
+  <section class="about" id="about">
+    <div class="about-title">
+      <hr width="10%" style="margin-left:5%;">
+        <h3>About</h3>
+      <hr width="60%">
+    </div>
+    <div class="about-text">
+      <p class="row">Hello! My name is Kristen Killingsworth and I am a fledgling full stack web developer. My background and bachelor's degree is in Humanities specifically focused on the societal issues surrounding marginalized communities. My original intention was to enter the field of museology however due to the pandemic it was difficult to build the connections required of breaking into that field. I fell back on my previous work experience of working with children to become an RBT working with children diagnosed with Autism. In 2022, I decided that I wanted to make a career change and enrolled in a full stack coding bootcamp through the University of Washington.</p>
+      <p class="row">During my bootcamp, I learned many skills involved with full stack web development. During my course work for my bachelor's I participated in a  
+        <a href="https://cdm16786.contentdm.oclc.org/digital/collection/p16786coll12/search/searchterm/xxskillspire" target="_blank">research project</a> to document and archive materials from a local organization targeted for under served populations in our community. I was assigned to Skillspire which is an organization that focuses on helping women and people of color gain employment in the ever expanding tech industry. This was part of my inspiration for choosing to attend a bootcamp and I hope to apply my newly acquired skills and my life experiences to bring a unique and necessary perspective to any development team.</p>
+      <div class="about-tech-list row">
+        <p>Here are some of the technologies that I have experience with:</p>
+        <ul class="row">
+          <div class="col-md-auto">
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Express.js</li>
+            <li>SQL</li>
+            <li>MongoDB</li>
+          </div>
+          <div class="col-md-auto">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Cloudinary</li>
+            <li>Google APIs</li>
+          </div>
         </ul>
-        <p>Made with ❤️ by Kristen Killingsworth</p>
-    </footer>
-    <script src="/script.js"></script>
+      </div>
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <div class="projects-title">
+      <hr width="10%" style="margin-left:5%;">
+        <h3>Projects</h3>
+      <hr width="60%">
+    </div>
+    <p>This is a test</p>
+  </section>
+  <section class="experience" id="experience">
+    <div class="experience-title">
+      <hr width="10%" style="margin-left:5%;">
+        <h3>Experience</h3>
+      <hr width="58%">
+    </div>
+    <p>This is a test</p>
+  </section>
+  <footer>
+      <ul>
+        <li>
+          <a href="https://github.com/killingsworth-kristen" target="_blank">
+            <img class="footer-img" src="./assets/images/github-mark-white.png" alt="github link"/>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kristen-killingsworth/" target="_blank">
+            <img class="footer-img" src="./assets/images/In-White-128.png" alt="linkedIn link"/>
+          </a>
+        </li>
+        <li>
+          <a href="mailto: killingsworth_kristen@yahoo.com" target="_blank">
+            <img class="footer-img" src="./assets/images/email-128.png" alt="email link"/>
+          </a>
+        </li>
+        <li>
+          <a href="tel:3163504963" target="_blank">
+            <img class="footer-img" src="./assets/images/phone-icon-white-transparent.png" alt="phone link"/>
+          </a>
+        </li>
+      </ul>
+      <p>Made with ❤️ by Kristen Killingsworth</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
