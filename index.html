@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <nav>
+  <nav class="sticky">
     <div class="navigation-tabs">
       <ul class="nav justify-content-end">
         <li class="nav-item">
@@ -36,21 +36,25 @@
       <button id="hamburgerMenuBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
         <img src="./assets/images/hamburger menu var(--green).png" alt="navigation menu" width="50">
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: fit-content;">
         <div class="offcanvas-header">
-          <button id="offcanvas-close-btn" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button id="offcanvas-close-btn" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#experience">Experience</a></li>
             </ul>
+            <button>
+              <a id="hamburger-resume-btn" href="./assets/KillingsworthResumeJan2023.pdf" target="_blank">Resume</a>
+            </button>
         </div>
       </div>
   </nav>
   <section class="home row">
-    <div class="col-4" id="title-container">
+    <div class="col-md-auto" id="title-container">
       <h1>Kristen Killingsworth</h1>
       <p>Full-Stack Web Developer</p>
     </div>

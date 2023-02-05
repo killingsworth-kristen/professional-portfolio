@@ -24,6 +24,12 @@ button {
 }
 
 /* nav styling */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .nav {
     margin: 1% 1% 0 0;
 }
@@ -47,23 +53,55 @@ button {
     background-color:  #233554;
 }
 
-.hamburger-menu {
+/* .hamburger-menu {
     display: flex;
     justify-content: end;
     margin: 1rem 1rem 0 0;
+} */
+
+.offcanvas-body ul {
+    list-style: none;
+    margin: 0 2rem 1rem 0;
+
+}
+
+.offcanvas-body a, a:visited {
+    text-decoration: none;
+    color: var(--slate);
+}
+
+.offcanvas-body a:hover {
+    color: var(--green);
+}
+
+#hamburger-resume-btn {
+    border: 2px solid var(--green);
+    border-radius: 15px;
+    color: var(--green);
+    padding: .5rem;
+    margin: 1rem 2rem;
+}
+
+#hamburger-resume-btn:hover {
+    background-color:  #233554;
 }
 
 /* main styling */
 /* home section */
+.home {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #title-container {
     text-align: end;
-    margin: 15% 0 15% 15%;
+    margin: 20% 0 0 0;
 }
 
 #profile-pic {
     flex-grow: 0;
-    width: 15%;
-    margin: 10% 10% 15% 0;
+    flex-shrink: 0;
+    margin: 15% 0 15% 0;
     padding: 0;
     box-shadow: 15px 15px var(--green);
 }
@@ -183,5 +221,37 @@ footer p {
 }
 
 /* media Query */
+@media (min-width: 801px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    #title-container {
+        text-align: center;
+        margin: 20% 0 0 0;
+    }
+
+    #profile-pic {
+        margin: 2% 13% 15% 13%;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        justify-content: end;
+        margin: 1rem 1rem 0 0;
+    }
+}
 /* fix profile image sizing */
 /* fix nav tabs */
