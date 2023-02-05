@@ -28,6 +28,7 @@ button {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .nav {
@@ -178,6 +179,32 @@ hr {
 
 .projects p {
     margin: 0
+}
+
+.projects-cards {
+    display: flex;
+    justify-content: center;
+    margin: 0 8% 0 8%;
+}
+.card {
+    margin: 2%;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.projects-in-dev {
+    margin: 0 0 0 10%;
+}
+
+.projects-in-dev h4 {
+    color: var(--light-slate);
+}
+
+.projects-in-dev ul {
+    padding: 0 0 1rem 0;
+    margin: 0;
 }
 
 /* experience section */
