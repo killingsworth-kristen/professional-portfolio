@@ -3,7 +3,8 @@
     --navy: #0a192f;
     --green: #64ffda;
     --slate: #8892b0;
-    --light-slate:#ccd6f6;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
 }
 
 * {
@@ -17,6 +18,10 @@
 
 button {
     border: none
+}
+
+h3 {
+    color: var(--lightest-slate);
 }
 
 .hidden {
@@ -89,6 +94,10 @@ button {
 
 /* main styling */
 /* home section */
+h1 {
+    color: var(--lightest-slate);
+}
+
 .home {
     flex-wrap: wrap;
     justify-content: center;
@@ -126,7 +135,7 @@ hr {
 }
 
 .about-title h3 {
-    color: var(--light-slate);
+    /* color: var(--lightest-slate); */
     font-weight: bold;
     margin:0 3% 0 3%;
 }
@@ -172,7 +181,7 @@ hr {
 }
 
 .projects-title h3 {
-    color: var(--light-slate);
+    /* color: var(--lightest-slate); */
     font-weight: bold;
     margin:0 3% 0 3%;
 }
@@ -199,12 +208,16 @@ hr {
 }
 
 .projects-in-dev h4 {
-    color: var(--light-slate);
+    color: var(--lightest-slate);
+}
+
+.projects-in-dev h5 {
+    color: var(--light-slate)
 }
 
 .projects-in-dev ul {
-    padding: 0 0 1rem 0;
-    margin: 0;
+    padding: 0 0 2rem 0;
+    margin: 0 0 0 3rem;
 }
 
 /* experience section */
@@ -220,7 +233,7 @@ hr {
 }
 
 .experience-title h3 {
-    color: var(--light-slate);
+    /* color: var(--lightest-slate); */
     font-weight: bold;
     margin:0 3% 0 3%;
 }
@@ -230,7 +243,7 @@ hr {
     padding-bottom: 2rem;
 }
 
-.experience-content  h4 {
+.experience-content h4 {
     color: var(--light-slate);
 }
 
