@@ -225,8 +225,17 @@ hr {
     margin:0 3% 0 3%;
 }
 
+.experience-content {
+    margin-left: 10%;
+    padding-bottom: 2rem;
+}
+
+.experience-content  h4 {
+    color: var(--light-slate);
+}
+
 .experience p {
-    margin: 0
+    margin: 0;
 }
 
 /* footer styling */
