@@ -53,7 +53,7 @@
         </div>
       </div>
   </nav>
-  <section class="home row">
+  <section class="home row" id="home">
     <div class="col-md-auto" id="title-container">
       <h1>Kristen Killingsworth</h1>
       <p>Full-Stack Web Developer</p>
@@ -133,21 +133,19 @@
               <a href="https://killingsworth-kristen.github.io/weather-dashboard/" target="_blank" class="btn btn-secondary" style="color:var(--green)">App</a>
             </div>
         </div>
-        <!-- TODO:find/fix thrid project -->
         <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+          <img src="./assets/images/social-media-network-API.PNG" class="card-img-top" alt="social media network API screenshot">
             <div class="card-body">
-              <h5 class="card-title">TBD</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque cum officiis repellat consectetur minima perspiciatis deleniti laborum aut voluptatibus facere, ea odit eius quis veniam quod. Earum voluptatem eveniet quibusdam!</p>
+              <h5 class="card-title">Social Media Network API</h5>
+              <p class="card-text">This is the backend of a "social media" website that has all of the routes set up to add users, posts, and comments on posts. See the README on Github for a full explanation and walkthrough of the individual routes.</p>
               <br>
               <p class="card-text">Techology Used</p>
               <ul>
-                <li>Lorem ipsum </li>
-                <li>Lorem ipsum </li>
-                <li>Lorem ipsum </li>
+                <li>Express.js</li>
+                <li>MongoDB/Mongoose</li>
               </ul>
-              <a href="#" target="_blank" class="btn btn-secondary" style="color:var(--green)">Github</a>
-              <a href="#" target="_blank" class="btn btn-secondary" style="color:var(--green)">App</a>
+              <a href="https://github.com/killingsworth-kristen/social-network-API" target="_blank" class="btn btn-secondary" style="color:var(--green)">Github</a>
+              <a href="https://watch.screencastify.com/v/86Nxzmn1PoPTDY2dZTt9" target="_blank" class="btn btn-secondary" style="color:var(--green)">Demo</a>
             </div>
         </div> 
       </div>
@@ -173,16 +171,49 @@
       </div>
     </div>
   </section>
-  <!-- TODO:Experience section -->
   <section class="experience" id="experience">
     <div class="experience-title">
       <hr width="10%" style="margin-left:3%;">
         <h3>Experience</h3>
       <hr width="58%">
     </div>
-    <div class="experience-content">
-      <h4>Coming Soon!</h4>
-      <p>In the interim please press the resume button to view my resume.</p>
+    <div class="experience-content row">
+      <div class="list-group col-md-auto">
+        <button type="button" class="list-group-item list-group-item-action active" id="attain-collapse" aria-current="true">
+          AttainABA
+        </button>
+        <button type="button" class="list-group-item list-group-item-action" id="best-in-class-collapse">Best in Class Education</button>
+        <button type="button" class="list-group-item list-group-item-action" id="edible-arrangements-collapse" >Edible Arrangements</button>
+      </div>
+      <div class="experience-text col-8">
+        <div class="collapse show" id="attain">
+          <div class="card card-body collapse-card">
+            <div class="collapse-card-text">
+              <h4>Registered Behavior Technician (RBT)</h4>
+              <h6>Northern Virginia</h6>
+              <p>Working with children diagnosed with Autism to help teach them functional and socially appropriate skills.</p>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="best-in-class">
+          <div class="card card-body collapse-card">
+            <div class="collapse-card-text">
+              <h4>English Instructor</h4>
+              <h6>Bothell/Mill Creek, Washington</h6>
+              <p>Manage a class of up to 6 children in the K-12 range for 75 minute sessions; primarily learning writing/grammar and vocabulary skills.</p>
+            </div>
+          </div>
+        </div>
+        <div class="collapse" id="edible-arrangements">
+          <div class="card card-body collapse-card">
+            <div class="collapse-card-text">
+              <h4>Manager</h4>
+              <h6>Mill Creek, Washington</h6>
+              <p>Responsible for all operations of the location including— but not limited to— HR functions (payroll, scheduling, hiring, etc), inventory, social media management, community outreach, etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <footer>

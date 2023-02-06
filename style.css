@@ -28,6 +28,13 @@ h3 {
     display: none;
 }
 
+.card {
+    background-color: var(--navy);
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 /* nav styling */
 .sticky {
     position: fixed;
@@ -251,6 +258,40 @@ hr {
     margin: 0;
 }
 
+.list-group {
+    width: fit-content;
+}
+
+.list-group-item {
+    background-color: var(--navy);
+    border: 1px solid var(--navy);
+    border-radius: 0;
+    color: var(--green)
+}
+
+.list-group-item.active {
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 0;
+    color: var(--navy)
+}
+
+.list-group-item:hover {
+    background-color: var(--slate);
+    border-radius: 0;
+    color: var(--navy);
+}
+
+.collapse-card {
+    padding: 0;
+    margin: 0 0 0 1rem;
+}
+
+.collapse-card-text {
+    margin: 1rem;
+    background-color: var(--navy);
+}
+
 /* footer styling */
 .footer-img {
     width: 50px;
@@ -289,6 +330,10 @@ footer p {
     #profile-pic {
         margin: 2% 13% 15% 13%;
     }
+
+    /* TODO:collapse card/list group centered */
+    /* TODO: List group inline? */
+    /* TODO: Projects stacking */
 }
 
 @media (max-width: 500px) {
@@ -301,6 +346,7 @@ footer p {
         justify-content: end;
         margin: 1rem 1rem 0 0;
     }
+
+    /* TODO:collapse card/list group centered */
+    /* TODO: List group inline? */
 }
-/* fix profile image sizing */
-/* fix nav tabs */
