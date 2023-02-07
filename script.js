@@ -53,3 +53,4 @@ for (let i = 0; i < listGroupItems.length; i++) {
     listGroupItems[i].addEventListener(`click`, activateListGroupItem)
 }
 
+
