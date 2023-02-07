@@ -200,6 +200,8 @@ hr {
 .projects-cards {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin: 0 8% 0 8%;
 }
 .card {
@@ -208,6 +210,10 @@ hr {
 
 .card a {
     text-decoration: none;
+}
+
+.project {
+    max-width: 450px;
 }
 
 .projects-in-dev {
@@ -333,7 +339,6 @@ footer p {
 
     /* TODO:collapse card/list group centered */
     /* TODO: List group inline? */
-    /* TODO: Projects stacking */
 }
 
 @media (max-width: 500px) {
