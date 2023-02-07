@@ -1,22 +1,20 @@
 # professional-portfolio
-This is the place that all of my professional materials to show to potential employers will be housed. It is currently under construction, so it is not entirely professional and includes some personal details that will not be present on the final product.
+This is the place that all of my professional materials are housed. 
 
-## Usage
+## Installation
 There is no installation necessary and the application has been deployed at this address: https://killingsworth-kristen.github.io/professional-portfolio/.
 
-At the top of the page there is a nav bar that is linked to the relevant sections of the webpage (about me, work, contact me). The last link on the nav bar links directly to a pdf of my resume. When you hover over a particular link, the background color and text color inverts. 
+## Usage
+At the top of the page there is a nav bar that is linked to the relevant sections of the webpage (about, projects, experience, and resume). The last link on the nav bar links directly to a pdf of my resume. This is optimized for mobile viewing and condenses down into a hamburger menu. 
 
-I currently don't have any professional work that I want to show off, but I wanted the section to be functional with links. I decided to use my knitting and crochet work as placeholder links/images. The images link to the project page on Ravelry (a social media site for knitting/crochet/fiber arts/etc) and have a card with the name of the project and which craft it is. I added a little flair to this section by having a hover element that changes the border color and adds a little bit of a glow aroud the project element. 
+I have provided my final project for my coding bootcamp, a weather dashboard app, and a social media network API as examples of my work. All of them have a link to the code hosted on Github as well as the app/demo. Additionaly, I have a section about what I am currently developing that will be constantly updated with links to the files on github. 
 
-Much the same as the nav bar at the top, the contact links at the bottom of the page invert the colors upon hovering over them. They are also all functional with the exception of the pbone number. 
+The experience section utilizes Bootstrap's list group and collapse components to creat an interactive look at my work history. All of the information is also available on my resume. 
 
-## Support
-My contact info is on the webpage if support is needed.
+The footer has links to my github, linkedIn, email, and phone number. 
 
 ## Authors and Acknowledgement
-I built the entirety of this applicatioin form the ground up without any starter code. some resources I used were:
-http://www.davidmacd.com/blog/alternate-text-for-css-background-images.html
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Resizing_background_images
+This application is built entirely by me using basic HTML, CSS, and JavaScript. I used Bootstrap as my CSS framework. 
 
-## Project Status
-This project is not fully complete at this stage. I intend to update it as I compete my UW coding bootcamp course so that it may be a resource to give to potential employers as proof of my skills and abilities as a web developer. 
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
