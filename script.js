@@ -19,6 +19,7 @@ offcanvasCloseBtn.addEventListener(`click`, closeOffcanvas)
 
 // list group/collapse functionality
 let listGroupItems = document.getElementsByClassName(`list-group-item`)
+let adnetCollapse = document.getElementById(`adnet`)
 let attainCollapse = document.getElementById(`attain`)
 let bestInClassCollapse = document.getElementById(`best-in-class`)
 let edibleArrangementsCollapse = document.getElementById(`edible-arrangements`)
@@ -32,15 +33,23 @@ function activateListGroupItem (e) {
     }
     e.target.classList.add(`active`)
     e.target.setAttribute(`aria-current`,`true`)
-    if (e.target.id === `attain-collapse`) {
+    if (e.target.id === `adnet-collapse`) {
+        adnetCollapse.classList.add(`show`)
+        attainCollapse.classList.remove(`show`)
+        bestInClassCollapse.classList.remove(`show`)
+        edibleArrangementsCollapse.classList.remove(`show`)
+    } else if (e.target.id === `attain-collapse`) {
+        adnetCollapse.classList.remove(`show`)
         attainCollapse.classList.add(`show`)
         bestInClassCollapse.classList.remove(`show`)
         edibleArrangementsCollapse.classList.remove(`show`)
     } else if (e.target.id === `best-in-class-collapse`) {
+        adnetCollapse.classList.remove(`show`)
         attainCollapse.classList.remove(`show`)
         bestInClassCollapse.classList.add(`show`)
         edibleArrangementsCollapse.classList.remove(`show`)
     } else if (e.target.id === `edible-arrangements-collapse`) {
+        adnetCollapse.classList.remove(`show`)
         attainCollapse.classList.remove(`show`)
         bestInClassCollapse.classList.remove(`show`)
         edibleArrangementsCollapse.classList.add(`show`)
